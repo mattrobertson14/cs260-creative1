@@ -1,0 +1,122 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Oswald', sans-serif;
+}
+
+body * {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.main-content {
+  font-family: 'Oswald', sans-serif;
+  width: 80%;
+  max-width: 1000px;
+  min-width: 400px;
+  padding: 30px 15px;
+  margin: 0px auto;
+  background: transparent;
+  flex: 1;
+}
+
+.home p {
+  text-align: justify;
+  margin-bottom: 28px;
+}
+
+.home ol {
+  padding: 24px;
+}
+
+.home li {
+  padding: 6px;
+  font-size: 18px;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movie {
+  margin-right: 24px;
+  position: relative;
+  margin-top: 24px;
+}
+
+.movie img {
+  width: 182px;
+  height: 268px;
+}
+
+.movie .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+  color: rgba(255,255,255,.7);
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.movie:hover .details {
+  opacity: 1;
+}
+
+.movie .details span {
+  display: block;
+  padding: 8px 16px;
+}
+
+.movie .details .title {
+  font-size: 18px;
+  padding-top: 16px;
+  color: white;
+}
+
+.actor-bio {
+  display: flex;
+}
+
+.actor-bio img {
+  height: 200px;
+  margin-right: 24px;
+  margin-top: 8px;
+}
+
+.disclosure {
+  text-decoration: none;
+  text-align: center;
+  font-style: italic;
+  color: rgba(0,0,0,.6);
+}
+
+.footer {
+  width: 100%;
+  padding: 18px;
+  margin-top: 24px;
+  background-color: #08405E;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+  color: rgba(255,255,255,.8);
+}
